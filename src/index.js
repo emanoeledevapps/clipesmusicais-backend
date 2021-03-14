@@ -18,7 +18,7 @@ mongoose.connect(
   }
 );
 
-app.use(cors('Access-Control-Allow-Origin'));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan("dev"));
